@@ -2,7 +2,7 @@ Summary:	Wiggle - apply conflicting patches
 Summary(pl):	Wiggle - nak³adanie konfliktuj±cych patchy
 Name:		wiggle
 Version:	0.6
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/%{name}-%{version}.tar.gz
