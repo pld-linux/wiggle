@@ -1,9 +1,9 @@
-Summary:	wiggle
-Summary(pl):	wiggle
+Summary:	Wiggle - apply conflicting patches
+Summary(pl):	Wiggle - nak³adanie konfliktuj±cych patchy
 Name:		wiggle
 Version:	0.6
 Release:	0.1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Source0:	http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/%{name}-%{version}.tar.gz
 # Source0-md5:	1884607cdebaf730737cb99b2909219b
@@ -22,12 +22,11 @@ patch z powodu konkliktów.
 %setup -q
 
 %build
-%{__make} wiggle wiggle.man
+%{__make} wiggle wiggle.man \
+	CC="%{__cc}" OptDbg="%{rpmcflags} %{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -37,5 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ANNOUNCE TODO
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/wiggle.1*
