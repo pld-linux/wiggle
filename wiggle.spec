@@ -16,7 +16,7 @@ because of conflicting changes.
 
 %description -l pl
 Wiggle jest programem do aplikowania patchy, których na³o¿enia odmówi
-patch z powodu konkliktów.
+patch z powodu konfliktów.
 
 %prep
 %setup -q
