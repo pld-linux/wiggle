@@ -6,6 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Text
 Source0:	http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/%{name}-%{version}.tar.gz
+# Source0-md5:	1884607cdebaf730737cb99b2909219b
 URL:		http://www.cse.unsw.edu.au/~neilb/source/wiggle/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
