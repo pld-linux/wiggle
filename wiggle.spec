@@ -1,5 +1,5 @@
 Summary:	Wiggle - apply conflicting patches
-Summary(pl):	Wiggle - nak³adanie konfliktuj±cych patchy
+Summary(pl.UTF-8):   Wiggle - nakÅ‚adanie konfliktujÄ…cych patchy
 Name:		wiggle
 Version:	0.6
 Release:	1
@@ -15,9 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Wiggle is a program for applying patches that patch cannot apply
 because of conflicting changes.
 
-%description -l pl
-Wiggle jest programem do aplikowania patchy, których na³o¿enia odmówi
-patch z powodu konfliktów.
+%description -l pl.UTF-8
+Wiggle jest programem do aplikowania patchy, ktÃ³rych naÅ‚oÅ¼enia odmÃ³wi
+patch z powodu konfliktÃ³w.
 
 %prep
 %setup -q
