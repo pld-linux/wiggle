@@ -1,5 +1,5 @@
 Summary:	Wiggle - apply conflicting patches
-Summary(pl.UTF-8):   Wiggle - nakładanie konfliktujących patchy
+Summary(pl.UTF-8):	Wiggle - nakładanie konfliktujących patchy
 Name:		wiggle
 Version:	0.6
 Release:	1
