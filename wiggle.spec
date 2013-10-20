@@ -1,13 +1,13 @@
 Summary:	Wiggle - apply conflicting patches
 Summary(pl.UTF-8):	Wiggle - nakładanie konfliktujących patchy
 Name:		wiggle
-Version:	0.6
+Version:	1.0
 Release:	1
 License:	GPL v2
 Group:		Applications/Text
-Source0:	http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/%{name}-%{version}.tar.gz
-# Source0-md5:	1884607cdebaf730737cb99b2909219b
-URL:		http://www.cse.unsw.edu.au/~neilb/source/wiggle/
+Source0:	http://neil.brown.name/wiggle/%{name}-%{version}.tar.gz
+# Source0-md5:	777d8d4c718220063511e82e16275d1b
+URL:		http://neil.brown.name/wiggle/
 BuildRequires:	groff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,7 @@ patch z powodu konfliktów.
 
 %build
 %{__make} wiggle wiggle.man \
-	CC="%{__cc}" OptDbg="%{rpmcflags} %{rpmldflags}"
+	CC="%{__cc}" CFLAGS="-I. %{rpmcflags} %{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
