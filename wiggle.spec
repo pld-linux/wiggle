@@ -1,12 +1,12 @@
 Summary:	Wiggle - apply conflicting patches
 Summary(pl.UTF-8):	Wiggle - nakładanie konfliktujących patchy
 Name:		wiggle
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://neil.brown.name/wiggle/%{name}-%{version}.tar.gz
-# Source0-md5:	777d8d4c718220063511e82e16275d1b
+# Source0-md5:	0a76d5ed008094da05ac15abe89c1641
 URL:		http://neil.brown.name/wiggle/
 BuildRequires:	groff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
