@@ -9,6 +9,7 @@ Source0:	https://neil.brown.name/wiggle/%{name}-%{version}.tar.gz
 # Source0-md5:	3ceb7ef267250d993f751f0237a53aae
 URL:		https://neil.brown.name/wiggle/
 BuildRequires:	groff
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
