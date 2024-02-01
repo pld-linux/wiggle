@@ -1,12 +1,12 @@
 Summary:	Wiggle - apply conflicting patches
 Summary(pl.UTF-8):	Wiggle - nakładanie konfliktujących patchy
 Name:		wiggle
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Text
 Source0:	https://neil.brown.name/wiggle/%{name}-%{version}.tar.gz
-# Source0-md5:	3ceb7ef267250d993f751f0237a53aae
+# Source0-md5:	90b494d35a2cd5b46a0fa28625526a71
 URL:		https://neil.brown.name/wiggle/
 BuildRequires:	groff
 BuildRequires:	ncurses-devel
@@ -25,7 +25,9 @@ patch z powodu konfliktów.
 
 %build
 %{__make} wiggle wiggle.man \
-	CC="%{__cc}" CFLAGS="-I. %{rpmcflags} %{rpmldflags}"
+	V=1 \
+	CC="%{__cc}" \
+	CFLAGS="-I. %{rpmcflags} %{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
